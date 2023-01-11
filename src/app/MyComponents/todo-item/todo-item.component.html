@@ -1,0 +1,9 @@
+<div class="container border my-3 ">
+  <h5>{{todo.title}}</h5>
+  <p class="mx-5">{{todo.desc}}</p>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckboxClick(todo)">
+    <label class="form-check-label" for="exampleCheck1">Done</label>
+  </div>
+  <button class="btn btn-danger btn-sm" (click)="onClick(todo)">Delete</button>
+</div>
